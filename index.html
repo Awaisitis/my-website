@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>House Planner</title>
+    <style>
+        :root{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4}
+        body{margin:0;padding:0;color:#111;background:#f7f7f7}
+        header{background:#0366d6;color:#fff;padding:1rem}
+        header .container, main .container, footer .container{max-width:900px;margin:0 auto;padding:0 1rem}
+        nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+        a{color:inherit;text-decoration:none}
+        main{padding:2rem 0}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+        footer{background:#222;color:#eee;padding:1rem;font-size:.9rem}
+        .card{background:#fff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    </style>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Calculating Constituents</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home" class="card">
+                <h2>Welcome</h2>
+                <p>Let's see what is required to make a house.</p>
+            </section>
+
+
+
+        <form id="inputForm">
+            <label for="quantity">Enter a number in sqft:</label>
+            <input type="number" id="quantity" name="quantity">
+            <button type="submit">Calculate</button>
+        </form>
+
+
+
+            
+            <section id="features" class="grid" style="margin-top:1rem">
+                <article class="card">
+                    <h3>No of bricks needed</h3>
+                    <p id="result1">...</p>
+                </article>
+                <article class="card">
+                    <h3>Amount of cement needed</h3>
+                    <p id="result2" >...</p>
+                </article>
+                <article class="card">
+                    <h3>Amount of sand needed</h3>
+                    <p id="result3" >...</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <small>&copy; <span id="year"></span> Your Name — Built with HTML</small>
+        </div>
+    </footer>
+</body>
+</html></div>
